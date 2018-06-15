@@ -11,4 +11,6 @@ Edit the crontab using:
 ```
 sudo crontab -u www-data -e
 ```
-Change the raid settings in the file raidstatus.php.
+Change the raid settings for hprm-info in the file raidstatus.php.
+
+Learn more about hprm-info here: https://github.com/Snekabel/hprm-info
