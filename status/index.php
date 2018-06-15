@@ -141,7 +141,7 @@ foreach ($interfaces as $iface)
 <!DOCTYPE html>
 <html>
 <head>
-    <title>neotheone.se</title>
+    <title>Status Page</title>
     <meta charset="utf-8">
     <style type="text/css">
         html {
