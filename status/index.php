@@ -221,14 +221,14 @@ foreach ($interfaces as $iface)
     <h1>Uptime</h1>
     <p>Been up for <strong><?php echo calculate_age($up_since) ?></strong>, since <strong><?php echo gmdate('Y-m-d, g:ia', $up_since) ?></strong>.</p>
     <p><code><?php echo htmlspecialchars(trim(shell_exec('uptime'))) ?></code></p>
-    <h1>Disk space</h1>
+    <h1>Volumes</h1>
     <?php foreach ($disks as $dir => $disk): ?>
         <h2><?php echo $disk['name'] ?></h2>
         <div class="meter">
             <div class="bar" style="width: <?php echo $disk['spacepercent'] ?>%"><?php echo make_size($disk['spaceused']) ?> / <?php echo make_size($disk['spacetotal']) ?> (<?php echo make_size($disk['spacefree']) ?> free)</div>
         </div>
     <?php endforeach ?>
-    <h2>Mounted</h2>
+    <h2>Mount points</h2>
     <?php echo tableize('df -h', array('Mounted on')) ?>
     <h1>Memory</h1>
     <?php echo tableize('free -m') ?>
