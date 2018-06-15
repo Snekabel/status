@@ -228,7 +228,7 @@ foreach ($interfaces as $iface)
             <div class="bar" style="width: <?php echo $disk['spacepercent'] ?>%"><?php echo make_size($disk['spaceused']) ?> / <?php echo make_size($disk['spacetotal']) ?> (<?php echo make_size($disk['spacefree']) ?> free)</div>
         </div>
     <?php endforeach ?>
-    <h2>df -h</h2>
+    <h2>Mounted</h2>
     <?php echo tableize('df -h', array('Mounted on')) ?>
     <h1>Memory</h1>
     <?php echo tableize('free -m') ?>
