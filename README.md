@@ -11,3 +11,4 @@ Edit the crontab using:
 ```
 sudo crontab -u www-data -e
 ```
+Change the raid settings in the file raidstatus.php.
